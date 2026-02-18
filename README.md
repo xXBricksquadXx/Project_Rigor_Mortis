@@ -1,5 +1,7 @@
 # Project Rigor Mortis: A Symposium of Systemic Toxicity
 
+![Project Banner](./public/banner.png)
+
 **"From the Grain to the Glitch"**
 
 ## 1. Abstract
@@ -37,3 +39,19 @@ This repository serves as a **compendium** of structural parallels between the "
 ### [Correlation Mapper](./src/correlation_mapper.py)
 
 - **Objective:** Mapping "Dollar General" density vs. CDC Cancer Rates.
+- **Status:** _Prototype Logic Active._
+
+## 4. The Evidence Locker (Receipts)
+
+A chain-of-custody archive for primary source documentation.
+
+### [Reports](./receipts/reports/)
+
+- **Kim (2023):** Duke University Policy Lab report on the sale of mental health data.
+- **Facebook Files (2021):** Internal "Teen Mental Health Deep Dive" deck.
+- **Trevor Project (2024):** Suicidality and Identity metrics.
+
+### [Toxicology](./receipts/toxicology/)
+
+- **Levine et al. (2017):** Meta-analysis of Western sperm count decline (52.4% drop).
+- **The Paraquat Papers:** Internal Syngenta memos regarding emetic additives and toxicity.
