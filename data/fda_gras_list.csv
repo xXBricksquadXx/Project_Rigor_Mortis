@@ -1,0 +1,11 @@
+chemical_name,cas_number,category,eu_status,us_status,health_risk_signal,primary_source
+Chlormequat Chloride,999-81-5,Growth Regulator,Restricted,Allowed (Imports),Reproductive Toxicity,Oat Cereals
+Paraquat,4685-14-7,Herbicide,Banned,Allowed,Parkinson's Disease,Soy/Corn/Cotton
+Red 40,25956-17-6,Colorant,Warning Label Req,Allowed,Hypersensitivity/ADHD,Candy/Snacks
+Red 3,16423-68-0,Colorant,Banned (Food),Allowed,Thyroid Cancer,Fruit Cocktails/Candy
+Titanium Dioxide,13463-67-7,Whitener,Banned,Allowed,Genotoxicity,Skittles/Creamers
+BHA,25013-16-5,Preservative,Restricted,GRAS,Carcinogen,Cereal Packaging
+BHT,128-37-0,Preservative,Restricted,GRAS,Endocrine Disruptor,Cereal Packaging
+Potassium Bromate,7758-01-2,Oxidizer,Banned,Allowed,Kidney Damage,Bread/Dough
+Azodicarbonamide,123-77-3,Bleaching Agent,Banned,Allowed,Respiratory Issues,Yoga Mats/Bun Dough
+High Fructose Corn Syrup,8029-43-4,Sweetener,Restricted (Quota),GRAS,Metabolic Syndrome,Processed Foods

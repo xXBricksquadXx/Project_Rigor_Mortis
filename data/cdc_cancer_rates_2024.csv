@@ -1,0 +1,7 @@
+cancer_type,age_group,year_range,incidence_trend,mortality_trend,suspected_driver
+Colorectal,20-49,2017-2022,+2.5% per year,Stable,Processed Meats/Low Fiber/Gut Microbiome
+Prostate,All Ages,2020-2024,+3.0% per year,Rising,Metabolic Syndrome/Endocrine Disruptors
+Endometrial,All Ages,2017-2022,+1.5% per year,Rising,Obesity/Hormonal Imbalance
+Liver,All Ages,2017-2022,Stable,Rising,Alcohol/Fatty Liver (HFCS)
+Breast,20-49,2017-2022,+1.0% per year,Stable,Hormonal Factors/Environmental Estrogens
+Pancreatic,All Ages,2017-2022,+1.0% per year,Rising,Obesity/Diabetes

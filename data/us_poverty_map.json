@@ -1,0 +1,34 @@
+[
+  {
+    "zip_code": "35611",
+    "region": "Athens/Limestone, AL (Sector B)",
+    "poverty_rate": 18.5,
+    "food_source_primary": "Discount Variety (Dollar General/Family Dollar)",
+    "organic_access": "Low",
+    "health_outcome_signal": "Elevated Colorectal (+12% vs Nat. Avg)"
+  },
+  {
+    "zip_code": "37208",
+    "region": "North Nashville, TN",
+    "poverty_rate": 28.0,
+    "food_source_primary": "Convenience/Corner Store",
+    "organic_access": "None",
+    "health_outcome_signal": "Critical Metabolic/Hypertension"
+  },
+  {
+    "zip_code": "37027",
+    "region": "Brentwood, TN",
+    "poverty_rate": 3.1,
+    "food_source_primary": "Premium Grocer (Whole Foods/Fresh Market)",
+    "organic_access": "High",
+    "health_outcome_signal": "Below Average Baseline"
+  },
+  {
+    "zip_code": "90210",
+    "region": "Beverly Hills, CA",
+    "poverty_rate": 4.5,
+    "food_source_primary": "Boutique Organic",
+    "organic_access": "High",
+    "health_outcome_signal": "Below Average Baseline"
+  }
+]
