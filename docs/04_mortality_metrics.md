@@ -6,7 +6,7 @@
 
 ## 1. The Mental Health Baseline (The Trevor Project Data)
 
-**Source:** _The Trevor Project National Survey on LGBTQ+ Youth Mental Health (2024)_
+**Source:** [_The Trevor Project National Survey on LGBTQ+ Youth Mental Health (2024)_](/receipts/reports/TTP_2024_National_Survey.pdf)
 **Metric:** Suicidality and Depression Rates.
 
 - **Key Data Points:**

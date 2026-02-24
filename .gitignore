@@ -1,0 +1,29 @@
+# ==========================================
+# PROJECT RIGOR MORTIS: .gitignore
+# ==========================================
+
+data/*.csv
+data/*.json
+data/*.geojson
+data/*.zip
+data/*.gz
+data/*.pbf
+
+# 2. Python Environments & Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+env/
+.env
+
+# 3. OS & IDE System Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 4. Jupyter Notebooks 
+.ipynb_checkpoints/

@@ -10,7 +10,7 @@
 
 This repository serves as a **compendium** of structural parallels between the "Generally Recognized as Safe" (GRAS) loophole in the US food supply and the "Terms of Service" (ToS) consent loopholes in Big Tech. It documents the "Slow Kill" paradigm—where latency is used to obfuscate liability.
 
-> **Status Note:** This project is a living research engine. The current datasets (`.csv`, `.json`) serve as **structural prototypes** to test the logic of the analysis tools (`src/correlation_mapper.py`). As this exploration continues, these placeholders will be replaced with raw, filtered data from federal and NGO sources to rigorously map the correlation between consumption and pathology.
+> **Status Note:** This project has transitioned from structural prototyping to active data ingestion. The Analysis Engine (`src/correlation_mapper.py`) currently processes raw federal datasets (CDC PLACES, USDA FARA) alongside live OSINT spatial telemetry to mathematically map the correlation between consumption, environment, and pathology. This is a living civic audit; data will be continuously refined to combat federal reporting latency and structural siloing.
 
 ## 2. The Modules (Research Vectors)
 
@@ -34,12 +34,44 @@ This repository serves as a **compendium** of structural parallels between the "
 - **Focus:** The Cost of "Programming" & Identity Fracture.
 - **The Metric:** Trevor Project 2024 Data vs. High-Engagement Algorithms.
 
+### [Phase V: The Pharma Integration](./docs/05_the_pharma_complex.md)
+
+- **Focus:** The "Invisibility Shield" & Symptom Monetization.
+- **The Mechanism:** 340B Loopholes, IRS Form 990 Charity Deficits, and the Psychiatric Pipeline.
+
 ## 3. The Tooling
 
 ### [Correlation Mapper](./src/correlation_mapper.py)
 
-- **Objective:** Mapping "Dollar General" density vs. CDC Cancer Rates.
-- **Status:** _Prototype Logic Active._
+- **Objective:** Mapping "Dollar General" density vs. CDC Cancer/Morbidity Rates.
+- **Status:** _Static POI Density Mapping Active._
+
+> **Data Latency Note:** The federal datasets used in this engine highlight structural data siloing. The CDC health data is current to 2024, while the most recent USDA Food Access Research Atlas (FARA) is constrained to 2019. This latency makes cross-agency health auditing intentionally difficult. The correlation mapper bypasses this by normalizing the timeline delta via FIPS tract matching.
+
+### The "Slow Kill" Matrix (Visual Receipts)
+
+#### A. Statistical Correlation Chart
+
+![Correlation Chart](./docs/correlation_chart.png)
+
+**How to Read This Data:**
+This matrix visualizes the **Top 100 most impoverished Census Tracts** in the United States, cross-referencing federal `CDC/USDA` data with `OpenStreetMap` distributor density.
+
+- **The X-Axis (The Pipeline):** Represents the number of "_Discount Variety_" stores within a 5km radius.
+- **The Y-Axis (The Outcome):** Represents the prevalence of chronic health anomalies in that exact tract.
+- **The Conclusion:** There is a positive association between discount store density and chronic health prevalence among high-poverty tracts. Further multivariate analysis is required to assess causality.
+
+#### B. Geospatial Threat Map (Folium)
+
+_Click the map below to access the raw interactive HTML file (`docs/vulnerability_map.html`), or download it to view the exact coordinate overlays._
+
+[![Vulnerability Map Preview](./docs/vulnerability_map_preview.png)](./docs/vulnerability_map.html)
+
+**Threat Level Key:**
+
+- **Yellow (0-1 Stores):** Baseline poverty zone.
+- **Orange (2-4 Stores):** Elevated exposure to GRAS loop-hole distributors.
+- **Crimson (5+ Stores):** Critical Density. The tract is saturated by ultra-processed inventory.
 
 ## 4. The Evidence Locker (Receipts)
 
@@ -55,3 +87,5 @@ A chain-of-custody archive for primary source documentation.
 
 - **Levine et al. (2017):** Meta-analysis of Western sperm count decline (52.4% drop).
 - **The Paraquat Papers:** Internal Syngenta memos regarding emetic additives and toxicity.
+
+- **[US Discount Food Store Footprint (2026)](https://www.kaggle.com/datasets/colbycsalim/us-discount-variety-store-footprint-2026):** Consolidated OpenStreetMap extraction for Dollar General/Family Dollar coordinates. Hosted on Kaggle for open-source civic auditing.
