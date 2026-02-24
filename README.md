@@ -88,4 +88,11 @@ A chain-of-custody archive for primary source documentation.
 - **Levine et al. (2017):** Meta-analysis of Western sperm count decline (52.4% drop).
 - **The Paraquat Papers:** Internal Syngenta memos regarding emetic additives and toxicity.
 
-- **[US Discount Food Store Footprint (2026)](https://www.kaggle.com/datasets/colbycsalim/us-discount-variety-store-footprint-2026):** Consolidated OpenStreetMap extraction for Dollar General/Family Dollar coordinates. Hosted on Kaggle for open-source civic auditing.
+### OSINT & External Datasets
+
+> **Note on Raw Data:** Due to GitHub's 100MB file size constraints, the raw `.csv` files used for local correlation mapping are excluded from this repository via `.gitignore`. For full transparency and civic auditing, you can pull the exact primary source datasets below into your local `data/` directory.
+
+- **[US Discount Food Store Footprint (2026)](https://www.kaggle.com/datasets/colbycsalim/us-discount-variety-store-footprint-2026):** Consolidated OpenStreetMap extraction for Dollar General/Family Dollar coordinates. Uploaded to Kaggle for open-source civic auditing.
+- **[CDC PLACES: Local Data for Better Health](https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-Census-Tract-D/cwsq-ngmh/about_data):** Census tract-level health metrics (`cdc_places_health.csv`).
+- **[USDA Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data):** Food desert and geographic accessibility metrics (`usda_food_deserts.csv`).
+- **[FDA GRAS Substances (SCOGS) Database](https://www.fda.gov/food/generally-recognized-safe-gras/gras-substances-scogs-database):** Generally Recognized as Safe list for additive and chemical cross-referencing (`fda_gras_list.csv`).
