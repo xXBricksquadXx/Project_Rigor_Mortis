@@ -1,0 +1,9 @@
+# ==========================================
+# Project Rigor Mortis: Dependencies
+# ==========================================
+# Execute: pip install -r requirements.txt
+
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+folium>=0.14.0

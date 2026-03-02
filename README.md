@@ -46,7 +46,12 @@ This repository serves as a **compendium** of structural parallels between the "
 - **Objective:** Mapping "Dollar General" density vs. CDC Cancer/Morbidity Rates.
 - **Status:** _Static POI Density Mapping Active._
 
-> **Data Latency Note:** The federal datasets used in this engine highlight structural data siloing. The CDC health data is current to 2024, while the most recent USDA Food Access Research Atlas (FARA) is constrained to 2019. This latency makes cross-agency health auditing intentionally difficult. The correlation mapper bypasses this by normalizing the timeline delta via FIPS tract matching.
+### [CMS Prescriber Audit](./src/cms_prescriber_audit.py)
+
+- **Objective:** Mapping the "Fair Share" Deficit and 340B/Medicare Arbitrage via the Herfindahl-Hirschman Index (HHI).
+- **Status:** _CMS Part D Normalized Intensity Model Active._
+
+> **Data Latency Note:** The federal datasets used in this engine highlight structural data siloing. The CDC health data is current to 2024, while the most recent USDA Food Access Research Atlas (FARA) is constrained to 2019, and the CMS Part D Prescriber Ledger is firewalled at 2023 due to a mandatory 18-24 month federal reconciliation delay. This built-in latency makes real-time, cross-agency health auditing intentionally difficult. The analysis engines bypass this by normalizing the timeline delta via FIPS tract matching and per-capita utilization models.
 
 ### The "Slow Kill" Matrix (Visual Receipts)
 
@@ -73,6 +78,17 @@ _Click the map below to access the raw interactive HTML file (`docs/vulnerabilit
 - **Orange (2-4 Stores):** Elevated exposure to GRAS loop-hole distributors.
 - **Crimson (5+ Stores):** Critical Density. The tract is saturated by ultra-processed inventory.
 
+#### C. The "**Compounding Asset**" Matrix (_CMS Ledger_)
+
+![CMS Billing Matrix](./docs/cms_intensity_matrix.png)
+
+**How to Read This Data:**
+This matrix visualizes the financial exhaust of the Pharma Complex (**Phase V**), focusing on a 10-city urban/rural crosswalk in Tennessee. It utilizes the federal **Centers for Medicare & Medicaid Services (CMS) Part D Prescriber Ledger**.
+
+- **The X-Axis (The Subscription):** Represents the normalized volume of 30-Day Fills per 1,000 local Medicare beneficiaries. Normalizing the data neutralizes population bias, allowing for a mathematically sound 1:1 comparison between rural clinics and urban hospitals.
+- **The Y-Axis (The Market):** Ranks the target cities by their Herfindahl-Hirschman Index (HHI) Revenue-Weighted Intensity.
+- **The Conclusion:** The financial data proves the pharmacological load is heavily targeted at rural poverty anchors. For example, **Columbia, TN** has a normalized billing intensity index (955.5) that is _more than double_ that of **Clarksville, TN** (465.1), despite Clarksville having a significantly larger population. Furthermore, DOJ-level HHI concentration (>0.25) in target areas indicates these facilities operate less as broad-spectrum medical clinics and more as highly concentrated distribution hubs for chronic symptom management.
+
 ## 4. The Evidence Locker (Receipts)
 
 A chain-of-custody archive for primary source documentation.
@@ -82,6 +98,8 @@ A chain-of-custody archive for primary source documentation.
 - **Kim (2023):** Duke University Policy Lab report on the sale of mental health data.
 - **Facebook Files (2021):** Internal "Teen Mental Health Deep Dive" deck.
 - **Trevor Project (2024):** Suicidality and Identity metrics.
+- **[CMS Concentration Index](./receipts/reports/v8_3_city_concentration.csv):** Rigor Mortis V8.3 mathematical output calculating the Herfindahl-Hirschman Index (HHI) for targeted Tennessee clinics, proving monopolistic revenue reliance on specific psychiatric/opioid pipelines.
+- **[CMS Pipeline Detail](./receipts/reports/v8_3_pipeline_detail.csv):** The granular federal ledger output demonstrating the "Arbitrage Spread" (e.g., $8 SSRIs vs. $190 Antipsychotics) and normalizing prescription volume per 1,000 Medicare beneficiaries to neutralize population density bias.
 
 ### [Toxicology](./receipts/toxicology/)
 
@@ -96,3 +114,5 @@ A chain-of-custody archive for primary source documentation.
 - **[CDC PLACES: Local Data for Better Health](https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-Census-Tract-D/cwsq-ngmh/about_data):** Census tract-level health metrics (`cdc_places_health.csv`).
 - **[USDA Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data):** Food desert and geographic accessibility metrics (`usda_food_deserts.csv`).
 - **[FDA GRAS Substances (SCOGS) Database](https://www.fda.gov/food/generally-recognized-safe-gras/gras-substances-scogs-database):** Generally Recognized as Safe list for additive and chemical cross-referencing (`fda_gras_list.csv`).
+- **[Centers for Medicare & Medicaid Services (CMS) Part D Prescribers](https://data.cms.gov/provider-summary-by-type-of-service/medicare-part-d-prescribers/medicare-part-d-prescribers-by-provider-and-drug):** Federal ledger of subsidized prescription billing (`cms_psych_prescribers_tn.csv`). _(Note: Federal reporting latency currently forces a 2023 dataset firewall; reconciliation delays average 18-24 months)._
+- **[CMS Medicare Monthly Enrollment](https://data.cms.gov/summary-statistics-on-beneficiary-enrollment/medicare-and-medicaid-reports/medicare-monthly-enrollment):** County-level beneficiary demographics used for per-capita utilization normalization (`tn_medicare_beneficiaries_2025.csv`).
