@@ -10,7 +10,7 @@
 
 This repository serves as a **compendium** of structural parallels between the "Generally Recognized as Safe" (GRAS) loophole in the US food supply and the "Terms of Service" (ToS) consent loopholes in Big Tech. It documents the "Slow Kill" paradigm—where latency is used to obfuscate liability.
 
-> **Status Note:** This project has transitioned from structural prototyping to active data ingestion. The Analysis Engine (`src/correlation_mapper.py`) currently processes raw federal datasets (CDC PLACES, USDA FARA) alongside live OSINT spatial telemetry to mathematically map the correlation between consumption, environment, and pathology. This is a living civic audit; data will be continuously refined to combat federal reporting latency and structural siloing.
+> **Status Note:** This project operates as a live, multi-vector civic audit. The dual Analysis Engines (`src/correlation_mapper.py` and `src/cms_prescriber_audit.py`) ingest raw federal datasets (CDC PLACES, USDA FARA, CMS Part D Ledgers) alongside OSINT spatial telemetry. Together, they mathematically map the full lifecycle of systemic toxicity—from the environmental induction of pathology to the taxpayer-subsidized monetization of chronic symptom management. Data is continuously refined to bypass federal reporting latency and structural siloing.
 
 ## 2. The Modules (Research Vectors)
 
