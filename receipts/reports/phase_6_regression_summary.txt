@@ -1,0 +1,33 @@
+PROJECT RIGOR MORTIS - PHASE VI STATISTICAL RECEIPT
+===================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         math_score_avg   R-squared:                       0.532
+Model:                            OLS   Adj. R-squared:                  0.480
+Method:                 Least Squares   F-statistic:                     10.22
+Date:                Sun, 08 Mar 2026   Prob (F-statistic):           1.38e-06
+Time:                        09:40:52   Log-Likelihood:                -143.92
+No. Observations:                  51   AIC:                             299.8
+Df Residuals:                      45   BIC:                             311.4
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+const                     297.3789      6.141     48.429      0.000     285.011     309.747
+Expenditure_Per_Student    -0.0001      0.000     -0.721      0.475      -0.000       0.000
+poverty_rate             -173.1786     25.377     -6.824      0.000    -224.291    -122.066
+ell_share                 -11.3099      6.669     -1.696      0.097     -24.743       2.123
+special_ed_share           -2.8821     25.999     -0.111      0.912     -55.247      49.482
+urban_share                 1.3201      3.342      0.395      0.695      -5.411       8.051
+==============================================================================
+Omnibus:                        2.082   Durbin-Watson:                   2.154
+Prob(Omnibus):                  0.353   Jarque-Bera (JB):                1.341
+Skew:                          -0.095   Prob(JB):                        0.511
+Kurtosis:                       2.229   Cond. No.                     6.82e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 6.82e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.

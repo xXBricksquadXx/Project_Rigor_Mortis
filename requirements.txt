@@ -7,3 +7,6 @@ pandas>=2.0.0
 numpy>=1.24.0
 matplotlib>=3.7.0
 folium>=0.14.0
+requests>=2.31.0
+seaborn>=0.13.0
+statsmodels>=0.14.0
