@@ -10,7 +10,12 @@
 
 This repository serves as a **compendium** of structural parallels between the "Generally Recognized as Safe" (GRAS) loophole in the US food supply and the "Terms of Service" (ToS) consent loopholes in Big Tech. It documents the "Slow Kill" paradigm—where latency is used to obfuscate liability.
 
-> **Status Note:** This project has transitioned from structural prototyping to active data ingestion. The Analysis Engine (`src/correlation_mapper.py`, `src/cms_prescriber_audit.py`, `src/education_roi_audit.py`) currently processes raw federal datasets (CDC PLACES, USDA FARA, NAEP, CMS Part D) alongside live OSINT spatial telemetry to mathematically map the correlation between consumption, environment, and pathology. This is a living civic audit; data will be continuously refined to combat federal reporting latency and structural siloing.
+> **Status Note:** This project has transitioned from structural prototyping to active data ingestion and is now preparing for operational deployment. The Analysis Engine (`src/correlation_mapper.py`, `src/cms_prescriber_audit.py`, `src/education_roi_audit.py`) currently processes raw federal datasets (CDC PLACES, USDA FARA, NAEP, CMS Part D) alongside live OSINT spatial telemetry to mathematically map the correlation between consumption, environment, and pathology. 
+>
+> **Active Target - Phase VII (The Action Vector):** We are actively shifting from civic reconnaissance to direct legislative and local action. Upcoming operational tooling includes:
+> - **Model Legislation:** A formally formatted, 2-page drafted bill designed for users to download and deliver directly to state representatives to mandate real-time ledger transparency.
+> - **Automated FOIA Generators:** A localized Python script allowing users to input a zip code to automatically generate the exact legal Freedom of Information Act (FOIA) documents required to extract current-year CMS billing data or district spending from local authorities.
+> - **The Civic Briefing:** A 1-page "Executive Summary," entirely stripped of Python jargon, optimized for immediate hand-off to school board members, mayors, and investigative journalists.
 
 ## 2. The Modules (Research Vectors)
 
